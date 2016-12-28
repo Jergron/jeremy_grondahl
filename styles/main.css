@@ -26,7 +26,7 @@ body {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
-  -oanimation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-duration: 1s; }
 
 #title:hover {
