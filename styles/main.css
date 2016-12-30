@@ -1,35 +1,61 @@
-html {
-  height: 100%;
+body, html {
+  height: 100%; }
+
+.whiteSpace {
+  background-color: white; }
+
+.visible:after {
+  content: "";
+  background-image: url("../images/Mountains-adam-zvanovec.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-
-body {
-  background: transparent; }
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: bgFade 1s 0.3s forwards;
+  -moz-animation: bgFade 1s 0.3s forwards;
+  -o-animation: bgFade 1s 0.3s forwards;
+  animation: bgFade 1s 0.3s forwards; }
 
 /******************
       HEADER
 ******************/
 .middleCenter {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 25%;
   margin-top: -100px;
   margin-left: -20%; }
 
 #title {
+  opacity: 1;
   font-size: 41px;
   letter-spacing: 5px;
+  color: black;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -oanimation-duration: 1s;
-  animation-duration: 1s; }
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
 
 #title:hover {
   cursor: pointer; }
+
+/******************
+      KEYFRAMES
+******************/
+@keyframes bgFade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */

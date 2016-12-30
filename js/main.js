@@ -5,6 +5,8 @@ $(function() {
   $('#title').on('click', function() {
     $(this).addClass(animationName).one(animationEnd, function(){
       $(this).removeClass(animationName);
+      $('.whiteSpace').addClass('visible');
     });
   });
 });
+
