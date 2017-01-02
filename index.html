@@ -9,40 +9,48 @@
     <title>Jeremy Grondahl</title>
   </head>
   <body>
-  
-    <div id="about" data-toggle="modal" data-target="#bio" aria-label="Left Align">
-      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-    </div>
-    <div class="container middleCenter">
-      <div class="row">
-        <div  class="animated zoomIn col-md-11">
-          <p id="title">
-            JEREMY GRONDAHL
-          </p>
-        </div>
-        <div class="col-xs-1">
-        </div>
+    <div class="parallax_section parallax_image_first">
+      <div id="about" data-toggle="modal" data-target="#bio" aria-label="Left Align">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      </div>
+      <div class="animated zoomIn middleCenter">
+        <p id="title">JEREMY GRONDAHL</p>
       </div>
     </div>
+    <div class="parallax_section parallax_image_second">          
+      <div class="contactInfo">
+        <p id="contact">CONTACT</p>
+        <a href="mailto:jeremygrondahl@gmail.com">
+          <span class="glyphicon glyphicon-envelope animated bounce" aria-hidden="true"></span>
+          <p>jeremygrondahl@gmail.com</p> 
+        </a>
+        <!-- <a href="tel:555-555-5555">
+          <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  
+        </a> -->
+      </div>
+      
+
+    </div>
+    <!-- MODAL -->
     <div data-direction='left' class="modal right fade" id="bio" tabindex="-1" role="dialog" aria-labelledby="Biography">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel2">About The Artist</h4>
-        </div>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel2">About The Artist</h4>
+          </div>
 
-        <div class="modal-body">
-          <img src="../images/jeremyG.jpg">
-          <a data-show-count="false" class="twitter-follow-button whiteSpace" href="https://twitter.com/jeremygrondahl">Follow @JeremyGrondahl</a>
-          <br>
-          <p>Jeremy Grondahl was born in Huntsville, Alabama and graduated as a homeschool geek where he acquired his passion for songwriting. Self-taught keyboardist with years of experience, Jeremy moved to Nashville, TN in 2008 where he grew as a songwriter. Jeremy worked with bands like It’s Alive, Magnolia Sons, and country artist Chase Allan. After working with independent industry professionals, he is now taking his talent solo. Jeremy's unique blend of earth like tones and nostalgic synth sounds produce an atmospheric narrative that speaks from a restless message of hope. Jeremy lives and works in Nashville, TN.</p>
-        </div>
+          <div class="modal-body">
+            <img src="../images/jeremyG.jpg">
+            <a data-show-count="false" class="twitter-follow-button" href="https://twitter.com/jeremygrondahl">Follow @JeremyGrondahl</a>
+            <br>
+            <p>Jeremy Grondahl was born in Huntsville, Alabama and graduated as a homeschool geek where he acquired his passion for songwriting. Self-taught keyboardist with years of experience, Jeremy moved to Nashville, TN in 2008 where he grew as a songwriter. Jeremy worked with bands like It’s Alive, Magnolia Sons, and country artist Chase Allan. After working with independent industry professionals, he is now taking his talent solo. Jeremy's unique blend of earth like tones and nostalgic synth sounds produce an atmospheric narrative that speaks from a restless message of hope. Jeremy lives and works in Nashville, TN.</p>
+          </div>
 
-      </div><!-- modal-content -->
-    </div><!-- modal-dialog -->
-  </div><!-- modal -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
     <script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="lib/bower_components/bootstrap/js/modal.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
