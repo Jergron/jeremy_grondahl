@@ -1,10 +1,9 @@
 
 $(document).ready(function(){
-
+  
   $('a').click(function(){
     $(this).addClass("visited");
   });
-  
   $(function() {
     var animationName = "animated rubberBand";
     var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
