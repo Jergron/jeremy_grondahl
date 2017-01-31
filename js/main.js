@@ -4,24 +4,25 @@ $(document).ready(function(){
   $('a').click(function(){
     $(this).addClass("visited");
   });
-  $(function() {
-    var animationName = "animated rubberBand";
-    var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-    $('#about').hide();
-    $('#title').on('click', function() {
-      $(this).animate({
-        'marginLeft' : "-=120px"
-      });
-      $(this).addClass(animationName).one(animationEnd, function(){
-        $(this).removeClass(animationName);
-        $('.parallax_section').addClass('visible'); 
-        $('#about').fadeIn(function(){
-          $(this).addClass('animated shake');
-        });
-      });
-    });
-  });
+  var images = [];
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image();
+          images[i].src = preload.arguments[i];
+        }
+      }
+      preload(
+        "../images/john-towner-min.jpg",
+        "../images/john-towner-min.png"
+      );
 
+  $(window).load(function() {
+    $('#overlay').fadeOut();
+    $('#title').addClass('animated zoomIn');
+    $('#about').addClass('animated shake');
+    $('#iFrame').addClass('animated zoomIn');
+
+  });
   /*************
   TWITTER WIDGET
   **************/

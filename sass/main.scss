@@ -1,6 +1,10 @@
 body, html {
-  height: 100%; 
-  //background-color: ivory;
+  //height: 100%; 
+  background: url('../images/john-towner-min.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 a {
   color: #7b182a;
@@ -13,52 +17,38 @@ a.visited {
   text-decoration:none;
 }
 
-.parallax_section {
-  height: 800px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 100% auto;
-  position:relative;
-}
-
-.visible:after {
-  content:"";
-  background: url('../images/john-towner.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  opacity:0;
-  z-index:-1;
-  -webkit-animation:bgFade 1s 0.3s forwards;
-  -moz-animation:bgFade 1s 0.3s forwards;
-  -o-animation:bgFade 1s 0.3s forwards;
-  animation:bgFade 1s 0.3s forwards;
+#overlay {
+  background-color: #fff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 4999;
+  top: 0;
+  left: 0;
+  float: left;
+  text-align: center;
+  padding-top: 25%;
 }
 
 /******************
       HEADER
 ******************/
-.parallax_image_first {
-  overflow: hidden;
-}
 
 .middleCenter {
   position: fixed;
   top: 25%;
   left: 26%;
 }
+#iFrame {
+  text-align: center;
+  margin-top: 300px;
+}
 
 #title { 
   font-size: 59px;
   letter-spacing: 5px;
   color: #D4A017;
+  z-index: 50001;
   font-family: 'Abril Fatface', cursive;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
@@ -67,9 +57,6 @@ a.visited {
   animation-duration: 1.5s;
 }
 
-#title:hover {
-  cursor: pointer;
-}
 /******************
       CONTACT
 ******************/
@@ -88,6 +75,11 @@ a.visited {
   color: #7b182a; 
   border-top: double;
   border-bottom: double;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  left: 0;
+  padding: 1rem;
   background-color: rgba(#06133e, 0.4);
   -webkit-animation: shwBox 7s infinite 500ms;
   -moz-animation: shwBox 7s infinite 500ms;
@@ -105,22 +97,18 @@ a.visited {
   }
 }
 
-
-.parallax_image_second {
-  max-height: 400px;
-  h2{
-    margin-top: 0;
-  }
-  background-color: rgba(#06133e, 0);
-}
-
 /******************
       BIOGRAPHY
 ******************/
-img {
+#proPic {
   max-width: 100%;
-  border-radius: 10%;
+  border-radius: 8px;
   opacity: 0.90;
+  background: #fff;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+  height: 250px;
+  width: 250px;
 }
 
 #about {
@@ -130,6 +118,7 @@ img {
   font-size: 30px;
   margin-top: 15px;
   margin-left: 93%;
+  top: 0px; 
 }
 
 .modal.right .modal-dialog {
@@ -244,6 +233,14 @@ img {
    #title, #contact {
     font-size: 41px;
     letter-spacing: 2px;
+  }
+  body, html {
+    height: 100%; 
+    background: url('../images/john-towner-min.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
